@@ -34,7 +34,7 @@ const { onLoop } = useRenderLoop();
 
 onLoop(({ delta }) => {
   if (starsRef.value) {
-    for (const star of starsRef.value.children) {
+    for (const star of (starsRef.value as any).children) {
       star.rotation.x += delta * 0.2;
       star.rotation.y += delta * 0.2;
       star.rotation.z += delta * 0.2;

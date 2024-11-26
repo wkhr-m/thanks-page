@@ -10,4 +10,8 @@ export default defineConfig({
       ...templateCompilerOptions,
     }),
   ],
+  base: "./",
+  build: {
+    outDir: "docs",
+  },
 });
