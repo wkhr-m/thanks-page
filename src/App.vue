@@ -27,7 +27,7 @@ const text = `Thank you!!!
     </Suspense>
     <Suspense>
       <Text3D
-        font="/BIZ_UDPGothic_Regular.json"
+        font="https://raw.githubusercontent.com/wkhr-m/thanks-page/refs/heads/main/public/BIZ_UDPGothic_Regular.json"
         center
         :text="text"
         :size="1"

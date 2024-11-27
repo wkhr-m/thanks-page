@@ -10,7 +10,10 @@ const yellowMaterial = new MeshStandardMaterial({
   roughness: 0.8,
 });
 
-const { nodes } = await useGLTF("/models/star.glb", { draco: true });
+const { nodes } = await useGLTF(
+  "https://raw.githubusercontent.com/wkhr-m/thanks-page/refs/heads/main/public/models/star.glb",
+  { draco: true }
+);
 
 const model = nodes["star"];
 
