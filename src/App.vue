@@ -15,12 +15,13 @@ const gl = {
   windowSize: true,
 };
 const text = `Thank you!!!
-右上のxを押して回答フォームを消してください。`;
+右上のxを押して
+回答フォームを消してください。`;
 </script>
 <template>
   <TresCanvas v-bind="gl">
     <TresPerspectiveCamera :position="[8.48, 2.65, 17.94]" :far="1000" />
-    <OrbitControls make-default :min-distance="60" :max-distance="100" />
+    <OrbitControls make-default :min-distance="40" :max-distance="90" />
     <Suspense>
       <ShootingStars />
     </Suspense>
